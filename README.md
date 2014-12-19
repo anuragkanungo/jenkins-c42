@@ -12,3 +12,12 @@ Bundle Install
 
 chef-client -z jenkins.rb
 
+
+Then, go to
+AMI Public IP:8080
+
+Jenkins Default login: <br>
+username : admin<br>
+password : admin<br>
+
+This can be configured in cookbooks/jenkins-c42/attributed/default.rb
