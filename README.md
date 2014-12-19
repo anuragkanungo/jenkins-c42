@@ -15,7 +15,7 @@ Add Inbound Rule to SSH and TCP Port 8080 allowing your IP.
 
 #### bundle install
 
-#### chef-client -z jenkins.rb
+#### chef-client -z cookbooks/jenkins-c42/recipes/default.rb
 
 
 #### Then, go to AMI Public IP:8080
