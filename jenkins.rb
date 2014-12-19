@@ -3,7 +3,9 @@ require 'chef/provider/fog_key_pair'
 
 with_driver 'fog:AWS'
 
-fog_key_pair 'ci-key'
+fog_key_pair 'ci-key' do
+  allow_overwrite true
+end
 
 with_machine_options :bootstrap_options => {
   :key_name => 'ci-key',
